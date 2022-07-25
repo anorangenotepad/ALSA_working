@@ -1,7 +1,7 @@
 
 /* 
  * plays a stereo saw wave for about 15 seconds
- * based on nagorni tutorial/example, and 'this is not a real program' code
+ * based on nagorni tutorial/example, and tranter code
  *
  * compile with gcc saw_player.c -o saw_player -Wall -lasound
  * (-Wall is optional...)
@@ -142,12 +142,12 @@ int main(){
 	frames = 8192; //again, called 'periodsize' in nagorni tutorial
 	//int periods = 2; //from nagorni example, used for testing nagorni buffer code
 
-	//nagorni method...not so good
+	
 	/* from nagorni example, wanted to see if this method also possible... 
 	 *
 	 * couldn't get to work that well, and i think this may be why the 
 	 * api function was not used to set buffer in original 
-	 * 'not program' code
+	 * tranter code
 
 
 	if (snd_pcm_hw_params_set_periods(handle, params, periods, 0) < 0) {

@@ -1,6 +1,6 @@
 /*
  *  This small demo sends a simple sinusoidal wave to your speakers.
- *  COMPILE gcc -o test_sine test_sine.c -lasound -lm
+ *  COMPILE gcc -o pcm_short pcm_short.c -lasound -lm
  *  you need libasound2-dev in ubuntu
  */
  
